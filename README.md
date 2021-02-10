@@ -13,5 +13,5 @@ $ ./gradlew browserRun
 
 ## Desktop(Jetpack Compose)
 ```
-
+$ ./gradlew desktop:run
 ```
