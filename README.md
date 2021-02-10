@@ -1,5 +1,5 @@
 # color-sheet-multiplatform
-A Kotlin multiplatform example app that targets Desktop, Javascript. This sample displays a color sheet. In this app, the font color logic is shared. The font color is calculated from the background color.
+A Kotlin multiplatform example app that targets Desktop, Javascript. This sample displays a color sheet. In this app, the font color logic is shared. Also, the font color is calculated from the background color.
 
 |Web(JavaScript)|Desktop(Jetpack Compose)|
 |--|--|
