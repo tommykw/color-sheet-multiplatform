@@ -1,7 +1,7 @@
 import androidx.compose.desktop.Window
-import androidx.compose.foundation.ScrollableColumn
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.*
+import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.material.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
@@ -22,20 +22,21 @@ fun main() = Window(
         contentAlignment = Alignment.Center
     ) {
 
-        ScrollableColumn(
-            modifier = Modifier.fillMaxSize(),
+        LazyColumn(
+            modifier = Modifier.fillMaxSize()
         ) {
-
             baseColors.forEach { r ->
                 baseColors.forEach { g ->
                     baseColors.forEach { b ->
-                        TextBox(
-                            text = "#$r$g$b",
-                            backgroundColor = Color(r.toInt(16), g.toInt(16), b.toInt(16)),
-                            textColor = getTextColor(r.toInt(16), g.toInt(16), b.toInt(16))
-                        )
+                        item {
+                            TextBox(
+                                text = "#$r$g$b",
+                                backgroundColor = Color(r.toInt(16), g.toInt(16), b.toInt(16)),
+                                textColor = getTextColor(r.toInt(16), g.toInt(16), b.toInt(16))
+                            )
 
-                        Spacer(modifier = Modifier.height(12.dp))
+                            Spacer(modifier = Modifier.height(12.dp))
+                        }
                     }
                 }
             }
