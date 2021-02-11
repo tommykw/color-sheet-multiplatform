@@ -1,7 +1,5 @@
-import color.sheet.common.BLACK
-import color.sheet.common.Colors
 import color.sheet.common.baseColors
-import color.sheet.common.getFontColor
+import color.sheet.common.getTextColor
 import kotlinx.browser.document
 import kotlinx.browser.window
 import kotlinx.html.div
@@ -36,13 +34,5 @@ fun Node.appendContents() {
                 }
             }
         }
-    }
-}
-
-fun getTextColor(red: Int, green: Int, blue: Int): String {
-    return if (getFontColor(red, green, blue) == Colors.BLACK) {
-        "#000000"
-    } else {
-        "#FFFFFF"
     }
 }

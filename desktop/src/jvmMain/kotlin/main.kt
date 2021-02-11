@@ -9,10 +9,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.dp
-import color.sheet.common.BLACK
-import color.sheet.common.Colors
-import color.sheet.common.baseColors
-import color.sheet.common.getFontColor
+import color.sheet.common.*
 
 fun main() = Window(
     title = "Color Sheet",
@@ -59,13 +56,5 @@ fun TextBox(
         contentAlignment = Alignment.Center
     ) {
         Text(text = text, color = textColor)
-    }
-}
-
-fun getTextColor(red: Int, green: Int, blue: Int): Color {
-    return if (getFontColor(red, green, blue) == Colors.BLACK) {
-        Color.Black
-    } else {
-        Color.White
     }
 }

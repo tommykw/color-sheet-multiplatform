@@ -1,13 +1,9 @@
+import org.jetbrains.compose.compose
+
 plugins {
     kotlin("multiplatform")
+    id("org.jetbrains.compose")
 }
-
-repositories {
-    google()
-}
-
-group = "color.sheet"
-version = "1.0"
 
 repositories {
     google()
@@ -40,13 +36,13 @@ kotlin {
     sourceSets {
         val commonMain by getting
         val commonTest by getting
-        val desktopMain by getting
-        val desktopTest by getting
-        val jsMain by getting
-        val jsTest by getting {
+        val desktopMain by getting {
             dependencies {
-                implementation(kotlin("test-js"))
+                implementation(compose.desktop.currentOs)
             }
         }
+        val desktopTest by getting
+        val jsMain by getting
+        val jsTest by getting
     }
 }
