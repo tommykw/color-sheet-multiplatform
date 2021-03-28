@@ -1,9 +1,9 @@
 pluginManagement {
     plugins {
-        kotlin("multiplatform") version "1.4.21-2"
-        kotlin("js") version "1.4.21-2"
-        kotlin("jvm") version "1.4.21-2"
-        id("org.jetbrains.compose") version "0.3.0-build146"
+        kotlin("multiplatform") version "1.4.31"
+        kotlin("js") version "1.4.31"
+        kotlin("jvm") version "1.4.31"
+        id("org.jetbrains.compose") version "0.4.0-build177"
     }
 
     repositories {
