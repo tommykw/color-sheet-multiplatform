@@ -14,8 +14,8 @@ expect val Colors.WHITE : Color
 
 val baseColors = listOf("00", "11", "22", "33", "44", "55", "66", "77", "88", "99", "AA", "BB", "CC", "DD", "EE", "FF")
 
-fun getRGBForCalculateLuminance(_color: Int): Double {
-    val color = _color / 255
+fun getRGBForCalculateLuminance(colorCode: Int): Double {
+    val color = colorCode / 255
     return if (color <= 0.03928) {
         color / 12.92
     } else {

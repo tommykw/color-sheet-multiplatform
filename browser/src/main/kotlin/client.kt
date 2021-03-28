@@ -1,3 +1,5 @@
+package color.sheet.brower
+
 import color.sheet.common.baseColors
 import color.sheet.common.getTextColor
 import kotlinx.browser.document
