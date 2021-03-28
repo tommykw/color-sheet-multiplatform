@@ -28,6 +28,6 @@ kotlin {
 
 compose.desktop {
     application {
-        mainClass = "MainKt"
+        mainClass = "color.sheet.desktop.MainKt"
     }
 }
